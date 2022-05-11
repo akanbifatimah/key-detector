@@ -14,12 +14,16 @@
         click button first, press any key on the keyboard, name and no of times key is pressed can be found on the screen and console.
     </h3>
     <button id="clicked">Click to see your match</button>
+    <h3
+        style="background-color: #4444; color:black; font-size:16px; padding:10px; text-align:center;text-transform: capitalize;">
+        enter secret code correctly to earn a cornify image.
+    </h3>
     <script>
         const secret = document.getElementById('secret')
         const clicked = document.getElementById('clicked')
         const pressed = [];
        
-        let secretCode='wasi';
+        let secretCode=prompt('Enter secret code');
         
         function windowClick () {
             window.addEventListener('keyup', (e) => {
